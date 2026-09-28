@@ -1,0 +1,60 @@
+{
+  "datasetCode": "FAL1",
+  "datasetName": "General Declaration",
+  "datasetSlug": "fal1-general-declaration",
+  "reportingPhase": "arrival-departure",
+  "syntheticSamples": true,
+  "sampleCount": 10,
+  "samples": [
+    {
+      "imo": "9300013",
+      "shipName": "RD HORIZON",
+      "url": "./9300013.json"
+    },
+    {
+      "imo": "9300025",
+      "shipName": "RD BLUE WAVE",
+      "url": "./9300025.json"
+    },
+    {
+      "imo": "9300037",
+      "shipName": "RD OCEAN LINK",
+      "url": "./9300037.json"
+    },
+    {
+      "imo": "9300049",
+      "shipName": "RD PACIFIC STAR",
+      "url": "./9300049.json"
+    },
+    {
+      "imo": "9300051",
+      "shipName": "RD ENERGY ONE",
+      "url": "./9300051.json"
+    },
+    {
+      "imo": "9300063",
+      "shipName": "RD EUROPE LINK",
+      "url": "./9300063.json"
+    },
+    {
+      "imo": "9300075",
+      "shipName": "RD AMERICA BRIDGE",
+      "url": "./9300075.json"
+    },
+    {
+      "imo": "9300087",
+      "shipName": "RD SOUTHERN CROSS",
+      "url": "./9300087.json"
+    },
+    {
+      "imo": "9300099",
+      "shipName": "RD GULF NAVIGATOR",
+      "url": "./9300099.json"
+    },
+    {
+      "imo": "9300104",
+      "shipName": "RD CHANNEL STAR",
+      "url": "./9300104.json"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "sampleMetadata": {
+    "syntheticSample": true,
+    "profileId": "RD24001-IMO-FAL-UNCEFACT-JSON-SAMPLE-1.0",
+    "imoCompendiumVersion": "FAL.5/Circ.56",
+    "datasetCode": "FAL7",
+    "datasetName": "Dangerous Goods Manifest",
+    "datasetSlug": "fal7-dangerous-goods-manifest",
+    "note": "Synthetic demonstration payload; not an official IMO normative JSON message."
+  },
+  "messageHeader": {
+    "messageFunctionCode": {
+      "content": "9",
+      "listId": "1225",
+      "listAgencyId": "UN/EDIFACT"
+    },
+    "authenticationDateTime": {
+      "content": "2026-09-29T07:00:00Z"
+    },
+    "messageId": {
+      "content": "FAL7-9300051-05",
+      "schemeId": "RD24001-SAMPLE"
+    },
+    "arrivalDepartureCode": {
+      "content": "A",
+      "listId": "IMO-ArrivalDeparture"
+    }
+  },
+  "ship": {
+    "imoShipNumberId": {
+      "content": "9300051",
+      "schemeId": "IMOShipNumber",
+      "schemeAgencyId": "IMO"
+    },
+    "shipName": "RD ENERGY ONE",
+    "callSignId": {
+      "content": "DR0005"
+    },
+    "mmsiNumberId": {
+      "content": "440000005",
+      "schemeId": "MMSI"
+    },
+    "flagStateId": {
+      "content": "PA",
+      "schemeId": "ISO3166-1-alpha2"
+    },
+    "shipTypeCode": {
+      "content": "80",
+      "listId": "UNECE-Rec28"
+    },
+    "shipTypeName": "Tanker"
+  },
+  "voyage": {
+    "voyageId": {
+      "content": "RD26-005"
+    },
+    "portOfDepartureCode": {
+      "content": "KRICN",
+      "listId": "UNLOCODE"
+    },
+    "portOfDepartureName": "Incheon, Republic of Korea",
+    "portOfArrivalCode": {
+      "content": "CNSHA",
+      "listId": "UNLOCODE"
+    },
+    "portOfArrivalName": "Shanghai, China",
+    "estimatedArrivalDateTime": {
+      "content": "2026-09-29T07:00:00Z"
+    },
+    "estimatedDepartureDateTime": {
+      "content": "2026-09-29T21:00:00Z"
+    },
+    "nextPortCode": {
+      "content": "JPTYO",
+      "listId": "UNLOCODE"
+    },
+    "nextPortName": "Tokyo, Japan"
+  },
+  "imoDataReferences": {
+    "messageHeader.messageFunctionCode": "IMO0305",
+    "messageHeader.arrivalDepartureCode": "IMO0013",
+    "messageHeader.authenticationDateTime": "IMO0014",
+    "ship.imoShipNumberId": "IMO0140",
+    "ship.shipName": "IMO0142",
+    "ship.callSignId": "IMO0136",
+    "ship.mmsiNumberId": "IMO0326",
+    "ship.flagStateId": "IMO0138",
+    "voyage.portOfArrivalCode": "IMO0108",
+    "voyage.portOfArrivalName": "IMO0109",
+    "voyage.estimatedArrivalDateTime": "IMO0064",
+    "dangerousGoodsManifest.items[].stowagePositionId": "IMO0045",
+    "dangerousGoodsManifest.items[].transportEquipmentId": "IMO0021",
+    "dangerousGoodsManifest.items[].shipperReferenceId": "IMO0056"
+  },
+  "dangerousGoodsManifest": {
+    "items": [
+      {
+        "itemSequenceNumber": 1,
+        "unNumberId": {
+          "content": "UN1203"
+        },
+        "properShippingName": "GASOLINE",
+        "dangerousGoodsClassCode": {
+          "content": "3"
+        },
+        "packingGroupCode": {
+          "content": "II"
+        },
+        "emsCode": {
+          "content": "F-E,S-E"
+        },
+        "flashPointMeasure": {
+          "content": -43,
+          "unitCode": "CEL"
+        },
+        "marinePollutantIndicator": false,
+        "stowagePositionId": {
+          "content": "BAY-14-02-82"
+        },
+        "transportEquipmentId": {
+          "content": "RDGU0000005"
+        },
+        "shipperReferenceId": {
+          "content": "DG-9300051-05"
+        }
+      }
+    ]
+  }
+}

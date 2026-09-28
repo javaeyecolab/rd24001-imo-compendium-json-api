@@ -1,0 +1,129 @@
+{
+  "sampleMetadata": {
+    "syntheticSample": true,
+    "profileId": "RD24001-IMO-FAL-UNCEFACT-JSON-SAMPLE-1.0",
+    "imoCompendiumVersion": "FAL.5/Circ.56",
+    "datasetCode": "FAL7",
+    "datasetName": "Dangerous Goods Manifest",
+    "datasetSlug": "fal7-dangerous-goods-manifest",
+    "note": "Synthetic demonstration payload; not an official IMO normative JSON message."
+  },
+  "messageHeader": {
+    "messageFunctionCode": {
+      "content": "9",
+      "listId": "1225",
+      "listAgencyId": "UN/EDIFACT"
+    },
+    "authenticationDateTime": {
+      "content": "2026-09-30T04:00:00Z"
+    },
+    "messageId": {
+      "content": "FAL7-9300087-08",
+      "schemeId": "RD24001-SAMPLE"
+    },
+    "arrivalDepartureCode": {
+      "content": "A",
+      "listId": "IMO-ArrivalDeparture"
+    }
+  },
+  "ship": {
+    "imoShipNumberId": {
+      "content": "9300087",
+      "schemeId": "IMOShipNumber",
+      "schemeAgencyId": "IMO"
+    },
+    "shipName": "RD SOUTHERN CROSS",
+    "callSignId": {
+      "content": "DR0008"
+    },
+    "mmsiNumberId": {
+      "content": "440000008",
+      "schemeId": "MMSI"
+    },
+    "flagStateId": {
+      "content": "AU",
+      "schemeId": "ISO3166-1-alpha2"
+    },
+    "shipTypeCode": {
+      "content": "79",
+      "listId": "UNECE-Rec28"
+    },
+    "shipTypeName": "General cargo ship"
+  },
+  "voyage": {
+    "voyageId": {
+      "content": "RD26-008"
+    },
+    "portOfDepartureCode": {
+      "content": "AUMEL",
+      "listId": "UNLOCODE"
+    },
+    "portOfDepartureName": "Melbourne, Australia",
+    "portOfArrivalCode": {
+      "content": "AUSYD",
+      "listId": "UNLOCODE"
+    },
+    "portOfArrivalName": "Sydney, Australia",
+    "estimatedArrivalDateTime": {
+      "content": "2026-09-30T04:00:00Z"
+    },
+    "estimatedDepartureDateTime": {
+      "content": "2026-09-30T18:00:00Z"
+    },
+    "nextPortCode": {
+      "content": "SGSIN",
+      "listId": "UNLOCODE"
+    },
+    "nextPortName": "Singapore"
+  },
+  "imoDataReferences": {
+    "messageHeader.messageFunctionCode": "IMO0305",
+    "messageHeader.arrivalDepartureCode": "IMO0013",
+    "messageHeader.authenticationDateTime": "IMO0014",
+    "ship.imoShipNumberId": "IMO0140",
+    "ship.shipName": "IMO0142",
+    "ship.callSignId": "IMO0136",
+    "ship.mmsiNumberId": "IMO0326",
+    "ship.flagStateId": "IMO0138",
+    "voyage.portOfArrivalCode": "IMO0108",
+    "voyage.portOfArrivalName": "IMO0109",
+    "voyage.estimatedArrivalDateTime": "IMO0064",
+    "dangerousGoodsManifest.items[].stowagePositionId": "IMO0045",
+    "dangerousGoodsManifest.items[].transportEquipmentId": "IMO0021",
+    "dangerousGoodsManifest.items[].shipperReferenceId": "IMO0056"
+  },
+  "dangerousGoodsManifest": {
+    "items": [
+      {
+        "itemSequenceNumber": 1,
+        "unNumberId": {
+          "content": "UN1203"
+        },
+        "properShippingName": "GASOLINE",
+        "dangerousGoodsClassCode": {
+          "content": "3"
+        },
+        "packingGroupCode": {
+          "content": "II"
+        },
+        "emsCode": {
+          "content": "F-E,S-E"
+        },
+        "flashPointMeasure": {
+          "content": -43,
+          "unitCode": "CEL"
+        },
+        "marinePollutantIndicator": false,
+        "stowagePositionId": {
+          "content": "BAY-17-02-82"
+        },
+        "transportEquipmentId": {
+          "content": "RDGU0000008"
+        },
+        "shipperReferenceId": {
+          "content": "DG-9300087-08"
+        }
+      }
+    ]
+  }
+}

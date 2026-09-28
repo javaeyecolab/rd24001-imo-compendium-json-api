@@ -1,0 +1,108 @@
+{
+  "sampleMetadata": {
+    "syntheticSample": true,
+    "profileId": "RD24001-IMO-FAL-UNCEFACT-JSON-SAMPLE-1.0",
+    "imoCompendiumVersion": "FAL.5/Circ.56",
+    "datasetCode": "MDH",
+    "datasetName": "Maritime Declaration of Health",
+    "datasetSlug": "maritime-declaration-health",
+    "note": "Synthetic demonstration payload; not an official IMO normative JSON message."
+  },
+  "messageHeader": {
+    "messageFunctionCode": {
+      "content": "9",
+      "listId": "1225",
+      "listAgencyId": "UN/EDIFACT"
+    },
+    "authenticationDateTime": {
+      "content": "2026-09-28T10:00:00Z"
+    },
+    "messageId": {
+      "content": "MDH-9300025-02",
+      "schemeId": "RD24001-SAMPLE"
+    },
+    "arrivalDepartureCode": {
+      "content": "A",
+      "listId": "IMO-ArrivalDeparture"
+    }
+  },
+  "ship": {
+    "imoShipNumberId": {
+      "content": "9300025",
+      "schemeId": "IMOShipNumber",
+      "schemeAgencyId": "IMO"
+    },
+    "shipName": "RD BLUE WAVE",
+    "callSignId": {
+      "content": "DR0002"
+    },
+    "mmsiNumberId": {
+      "content": "440000002",
+      "schemeId": "MMSI"
+    },
+    "flagStateId": {
+      "content": "KR",
+      "schemeId": "ISO3166-1-alpha2"
+    },
+    "shipTypeCode": {
+      "content": "70",
+      "listId": "UNECE-Rec28"
+    },
+    "shipTypeName": "Container ship"
+  },
+  "voyage": {
+    "voyageId": {
+      "content": "RD26-002"
+    },
+    "portOfDepartureCode": {
+      "content": "CNSHA",
+      "listId": "UNLOCODE"
+    },
+    "portOfDepartureName": "Shanghai, China",
+    "portOfArrivalCode": {
+      "content": "KRICN",
+      "listId": "UNLOCODE"
+    },
+    "portOfArrivalName": "Incheon, Republic of Korea",
+    "estimatedArrivalDateTime": {
+      "content": "2026-09-28T10:00:00Z"
+    },
+    "estimatedDepartureDateTime": {
+      "content": "2026-09-29T00:00:00Z"
+    },
+    "nextPortCode": {
+      "content": "KRPUS",
+      "listId": "UNLOCODE"
+    },
+    "nextPortName": "Busan, Republic of Korea"
+  },
+  "imoDataReferences": {
+    "messageHeader.messageFunctionCode": "IMO0305",
+    "messageHeader.arrivalDepartureCode": "IMO0013",
+    "messageHeader.authenticationDateTime": "IMO0014",
+    "ship.imoShipNumberId": "IMO0140",
+    "ship.shipName": "IMO0142",
+    "ship.callSignId": "IMO0136",
+    "ship.mmsiNumberId": "IMO0326",
+    "ship.flagStateId": "IMO0138",
+    "voyage.portOfArrivalCode": "IMO0108",
+    "voyage.portOfArrivalName": "IMO0109",
+    "voyage.estimatedArrivalDateTime": "IMO0064",
+    "maritimeDeclarationHealth.illnessCases[].illness": "IMO0220",
+    "maritimeDeclarationHealth.illnessCases[].symptomsOnsetDateTime": "IMO0221",
+    "maritimeDeclarationHealth.illnessCases[].reportedIndicator": "IMO0222",
+    "maritimeDeclarationHealth.illnessCases[].healthStatusCode": "IMO0223",
+    "maritimeDeclarationHealth.illnessCases[].caseDispositionCode": "IMO0224",
+    "maritimeDeclarationHealth.illnessCases[].treatment": "IMO0227",
+    "maritimeDeclarationHealth.visitedAffectedAreaIndicator": "IMO0203",
+    "maritimeDeclarationHealth.personDiedIndicator": "IMO0206"
+  },
+  "maritimeDeclarationHealth": {
+    "visitedAffectedAreaIndicator": false,
+    "personDiedIndicator": false,
+    "illPersonOnBoardIndicator": false,
+    "illnessCases": [],
+    "medicalOfficerContactedIndicator": false,
+    "sanitaryMeasuresApplied": "Routine sanitation procedures maintained."
+  }
+}

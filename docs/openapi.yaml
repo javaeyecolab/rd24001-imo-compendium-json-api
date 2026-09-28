@@ -1,0 +1,55 @@
+openapi: 3.1.0
+info:
+  title: RD24001 IMO Compendium Static JSON Sample API
+  version: 1.0.0
+  description: >-
+    Static GET API for synthetic IMO Compendium FAL.5/Circ.56 sample payloads.
+    Hosted on GitHub Pages; no POST/PUT/PATCH operations are provided.
+servers:
+  - url: ./
+paths:
+  /api/v1/index.json:
+    get:
+      summary: API metadata
+      responses:
+        '200': {description: OK, content: {application/json: {schema: {type: object}}}}
+  /api/v1/ships/index.json:
+    get:
+      summary: List sample ships
+      responses:
+        '200': {description: OK, content: {application/json: {schema: {type: object}}}}
+  /api/v1/ships/{imo}/index.json:
+    get:
+      summary: List all reports for one ship
+      parameters:
+        - {name: imo, in: path, required: true, schema: {type: string, pattern: '^[0-9]{7}$'}}
+      responses:
+        '200': {description: OK, content: {application/json: {schema: {type: object}}}}
+  /api/v1/ships/{imo}/{dataset}.json:
+    get:
+      summary: Get one dataset sample by ship IMO number
+      parameters:
+        - {name: imo, in: path, required: true, schema: {type: string, pattern: '^[0-9]{7}$'}}
+        - {name: dataset, in: path, required: true, schema: {type: string}}
+      responses:
+        '200': {description: OK, content: {application/json: {schema: {type: object}}}}
+  /api/v1/datasets/index.json:
+    get:
+      summary: List datasets
+      responses:
+        '200': {description: OK, content: {application/json: {schema: {type: object}}}}
+  /api/v1/datasets/{dataset}/index.json:
+    get:
+      summary: List 10 ship samples in a dataset
+      parameters:
+        - {name: dataset, in: path, required: true, schema: {type: string}}
+      responses:
+        '200': {description: OK, content: {application/json: {schema: {type: object}}}}
+  /api/v1/datasets/{dataset}/{imo}.json:
+    get:
+      summary: Get one ship sample from a dataset
+      parameters:
+        - {name: dataset, in: path, required: true, schema: {type: string}}
+        - {name: imo, in: path, required: true, schema: {type: string, pattern: '^[0-9]{7}$'}}
+      responses:
+        '200': {description: OK, content: {application/json: {schema: {type: object}}}}

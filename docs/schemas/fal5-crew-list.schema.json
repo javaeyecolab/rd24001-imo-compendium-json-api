@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/rd24001/schemas/fal5-crew-list.schema.json",
+  "title": "RD24001 Crew List sample schema",
+  "type": "object",
+  "required": [
+    "sampleMetadata",
+    "messageHeader",
+    "ship",
+    "voyage",
+    "imoDataReferences",
+    "crewList"
+  ],
+  "properties": {
+    "sampleMetadata": {
+      "type": "object",
+      "required": [
+        "syntheticSample",
+        "profileId",
+        "imoCompendiumVersion",
+        "datasetCode",
+        "datasetName"
+      ],
+      "properties": {
+        "syntheticSample": {
+          "const": true
+        },
+        "profileId": {
+          "type": "string"
+        },
+        "imoCompendiumVersion": {
+          "const": "FAL.5/Circ.56"
+        },
+        "datasetCode": {
+          "type": "string"
+        },
+        "datasetName": {
+          "type": "string"
+        }
+      }
+    },
+    "messageHeader": {
+      "type": "object"
+    },
+    "ship": {
+      "type": "object",
+      "required": [
+        "imoShipNumberId",
+        "shipName"
+      ]
+    },
+    "voyage": {
+      "type": "object"
+    },
+    "imoDataReferences": {
+      "type": "object"
+    },
+    "crewList": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

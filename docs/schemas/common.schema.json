@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/rd24001/schemas/common.schema.json",
+  "title": "RD24001 IMO Compendium Sample Common Envelope",
+  "type": "object",
+  "required": [
+    "sampleMetadata",
+    "messageHeader",
+    "ship",
+    "voyage",
+    "imoDataReferences"
+  ],
+  "properties": {
+    "sampleMetadata": {
+      "type": "object",
+      "required": [
+        "syntheticSample",
+        "profileId",
+        "imoCompendiumVersion",
+        "datasetCode",
+        "datasetName"
+      ],
+      "properties": {
+        "syntheticSample": {
+          "const": true
+        },
+        "profileId": {
+          "type": "string"
+        },
+        "imoCompendiumVersion": {
+          "const": "FAL.5/Circ.56"
+        },
+        "datasetCode": {
+          "type": "string"
+        },
+        "datasetName": {
+          "type": "string"
+        }
+      }
+    },
+    "messageHeader": {
+      "type": "object"
+    },
+    "ship": {
+      "type": "object",
+      "required": [
+        "imoShipNumberId",
+        "shipName"
+      ]
+    },
+    "voyage": {
+      "type": "object"
+    },
+    "imoDataReferences": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

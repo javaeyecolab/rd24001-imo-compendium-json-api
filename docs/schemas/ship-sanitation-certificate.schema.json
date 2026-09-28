@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/rd24001/schemas/ship-sanitation-certificate.schema.json",
+  "title": "RD24001 Ship Sanitation Certificate sample schema",
+  "type": "object",
+  "required": [
+    "sampleMetadata",
+    "messageHeader",
+    "ship",
+    "voyage",
+    "imoDataReferences",
+    "shipSanitationCertificate"
+  ],
+  "properties": {
+    "sampleMetadata": {
+      "type": "object",
+      "required": [
+        "syntheticSample",
+        "profileId",
+        "imoCompendiumVersion",
+        "datasetCode",
+        "datasetName"
+      ],
+      "properties": {
+        "syntheticSample": {
+          "const": true
+        },
+        "profileId": {
+          "type": "string"
+        },
+        "imoCompendiumVersion": {
+          "const": "FAL.5/Circ.56"
+        },
+        "datasetCode": {
+          "type": "string"
+        },
+        "datasetName": {
+          "type": "string"
+        }
+      }
+    },
+    "messageHeader": {
+      "type": "object"
+    },
+    "ship": {
+      "type": "object",
+      "required": [
+        "imoShipNumberId",
+        "shipName"
+      ]
+    },
+    "voyage": {
+      "type": "object"
+    },
+    "imoDataReferences": {
+      "type": "object"
+    },
+    "shipSanitationCertificate": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,149 @@
+{
+  "sampleMetadata": {
+    "syntheticSample": true,
+    "profileId": "RD24001-IMO-FAL-UNCEFACT-JSON-SAMPLE-1.0",
+    "imoCompendiumVersion": "FAL.5/Circ.56",
+    "datasetCode": "WASTE",
+    "datasetName": "Advance Notification for Waste Delivery",
+    "datasetSlug": "advance-notification-waste-delivery",
+    "note": "Synthetic demonstration payload; not an official IMO normative JSON message."
+  },
+  "messageHeader": {
+    "messageFunctionCode": {
+      "content": "9",
+      "listId": "1225",
+      "listAgencyId": "UN/EDIFACT"
+    },
+    "authenticationDateTime": {
+      "content": "2026-09-29T21:00:00Z"
+    },
+    "messageId": {
+      "content": "WASTE-9300075-07",
+      "schemeId": "RD24001-SAMPLE"
+    },
+    "arrivalDepartureCode": {
+      "content": "A",
+      "listId": "IMO-ArrivalDeparture"
+    }
+  },
+  "ship": {
+    "imoShipNumberId": {
+      "content": "9300075",
+      "schemeId": "IMOShipNumber",
+      "schemeAgencyId": "IMO"
+    },
+    "shipName": "RD AMERICA BRIDGE",
+    "callSignId": {
+      "content": "DR0007"
+    },
+    "mmsiNumberId": {
+      "content": "440000007",
+      "schemeId": "MMSI"
+    },
+    "flagStateId": {
+      "content": "MH",
+      "schemeId": "ISO3166-1-alpha2"
+    },
+    "shipTypeCode": {
+      "content": "70",
+      "listId": "UNECE-Rec28"
+    },
+    "shipTypeName": "Container ship"
+  },
+  "voyage": {
+    "voyageId": {
+      "content": "RD26-007"
+    },
+    "portOfDepartureCode": {
+      "content": "USOAK",
+      "listId": "UNLOCODE"
+    },
+    "portOfDepartureName": "Oakland, United States",
+    "portOfArrivalCode": {
+      "content": "USLAX",
+      "listId": "UNLOCODE"
+    },
+    "portOfArrivalName": "Los Angeles, United States",
+    "estimatedArrivalDateTime": {
+      "content": "2026-09-29T21:00:00Z"
+    },
+    "estimatedDepartureDateTime": {
+      "content": "2026-09-30T11:00:00Z"
+    },
+    "nextPortCode": {
+      "content": "JPTYO",
+      "listId": "UNLOCODE"
+    },
+    "nextPortName": "Tokyo, Japan"
+  },
+  "imoDataReferences": {
+    "messageHeader.messageFunctionCode": "IMO0305",
+    "messageHeader.arrivalDepartureCode": "IMO0013",
+    "messageHeader.authenticationDateTime": "IMO0014",
+    "ship.imoShipNumberId": "IMO0140",
+    "ship.shipName": "IMO0142",
+    "ship.callSignId": "IMO0136",
+    "ship.mmsiNumberId": "IMO0326",
+    "ship.flagStateId": "IMO0138",
+    "voyage.portOfArrivalCode": "IMO0108",
+    "voyage.portOfArrivalName": "IMO0109",
+    "voyage.estimatedArrivalDateTime": "IMO0064"
+  },
+  "advanceNotificationWasteDelivery": {
+    "lastWasteDeliveryPortCode": {
+      "content": "USOAK",
+      "listId": "UNLOCODE"
+    },
+    "nextWasteDeliveryPortCode": {
+      "content": "USLAX",
+      "listId": "UNLOCODE"
+    },
+    "wasteDeliveryPlannedIndicator": true,
+    "wasteEntries": [
+      {
+        "wasteTypeCode": {
+          "content": "MARPOL-I"
+        },
+        "description": "Oily bilge water",
+        "onBoardQuantityMeasure": {
+          "content": 3.8000000000000003,
+          "unitCode": "MTQ"
+        },
+        "maximumStorageCapacityMeasure": {
+          "content": 12.0,
+          "unitCode": "MTQ"
+        },
+        "plannedDeliveryQuantityMeasure": {
+          "content": 3.6,
+          "unitCode": "MTQ"
+        },
+        "estimatedRemainingQuantityMeasure": {
+          "content": 0.2,
+          "unitCode": "MTQ"
+        }
+      },
+      {
+        "wasteTypeCode": {
+          "content": "MARPOL-V"
+        },
+        "description": "Domestic waste",
+        "onBoardQuantityMeasure": {
+          "content": 1.4000000000000001,
+          "unitCode": "MTQ"
+        },
+        "maximumStorageCapacityMeasure": {
+          "content": 5.0,
+          "unitCode": "MTQ"
+        },
+        "plannedDeliveryQuantityMeasure": {
+          "content": 1.3,
+          "unitCode": "MTQ"
+        },
+        "estimatedRemainingQuantityMeasure": {
+          "content": 0.1,
+          "unitCode": "MTQ"
+        }
+      }
+    ]
+  }
+}

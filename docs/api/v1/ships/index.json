@@ -1,0 +1,76 @@
+{
+  "shipCount": 10,
+  "syntheticSamples": true,
+  "ships": [
+    {
+      "imo": "9300013",
+      "shipName": "RD HORIZON",
+      "flagState": "KR",
+      "shipTypeName": "Container ship",
+      "indexUrl": "./9300013/index.json"
+    },
+    {
+      "imo": "9300025",
+      "shipName": "RD BLUE WAVE",
+      "flagState": "KR",
+      "shipTypeName": "Container ship",
+      "indexUrl": "./9300025/index.json"
+    },
+    {
+      "imo": "9300037",
+      "shipName": "RD OCEAN LINK",
+      "flagState": "SG",
+      "shipTypeName": "General cargo ship",
+      "indexUrl": "./9300037/index.json"
+    },
+    {
+      "imo": "9300049",
+      "shipName": "RD PACIFIC STAR",
+      "flagState": "JP",
+      "shipTypeName": "Passenger ship",
+      "indexUrl": "./9300049/index.json"
+    },
+    {
+      "imo": "9300051",
+      "shipName": "RD ENERGY ONE",
+      "flagState": "PA",
+      "shipTypeName": "Tanker",
+      "indexUrl": "./9300051/index.json"
+    },
+    {
+      "imo": "9300063",
+      "shipName": "RD EUROPE LINK",
+      "flagState": "NL",
+      "shipTypeName": "Container ship",
+      "indexUrl": "./9300063/index.json"
+    },
+    {
+      "imo": "9300075",
+      "shipName": "RD AMERICA BRIDGE",
+      "flagState": "MH",
+      "shipTypeName": "Container ship",
+      "indexUrl": "./9300075/index.json"
+    },
+    {
+      "imo": "9300087",
+      "shipName": "RD SOUTHERN CROSS",
+      "flagState": "AU",
+      "shipTypeName": "General cargo ship",
+      "indexUrl": "./9300087/index.json"
+    },
+    {
+      "imo": "9300099",
+      "shipName": "RD GULF NAVIGATOR",
+      "flagState": "LR",
+      "shipTypeName": "Tanker",
+      "indexUrl": "./9300099/index.json"
+    },
+    {
+      "imo": "9300104",
+      "shipName": "RD CHANNEL STAR",
+      "flagState": "GB",
+      "shipTypeName": "Passenger ship",
+      "indexUrl": "./9300104/index.json"
+    }
+  ]
+}

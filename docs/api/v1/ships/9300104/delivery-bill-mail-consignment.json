@@ -1,0 +1,134 @@
+{
+  "sampleMetadata": {
+    "syntheticSample": true,
+    "profileId": "RD24001-IMO-FAL-UNCEFACT-JSON-SAMPLE-1.0",
+    "imoCompendiumVersion": "FAL.5/Circ.56",
+    "datasetCode": "MAIL",
+    "datasetName": "Delivery Bill for Mail Consignment",
+    "datasetSlug": "delivery-bill-mail-consignment",
+    "note": "Synthetic demonstration payload; not an official IMO normative JSON message."
+  },
+  "messageHeader": {
+    "messageFunctionCode": {
+      "content": "9",
+      "listId": "1225",
+      "listAgencyId": "UN/EDIFACT"
+    },
+    "authenticationDateTime": {
+      "content": "2026-09-30T18:00:00Z"
+    },
+    "messageId": {
+      "content": "MAIL-9300104-10",
+      "schemeId": "RD24001-SAMPLE"
+    }
+  },
+  "ship": {
+    "imoShipNumberId": {
+      "content": "9300104",
+      "schemeId": "IMOShipNumber",
+      "schemeAgencyId": "IMO"
+    },
+    "shipName": "RD CHANNEL STAR",
+    "callSignId": {
+      "content": "DR0010"
+    },
+    "mmsiNumberId": {
+      "content": "440000010",
+      "schemeId": "MMSI"
+    },
+    "flagStateId": {
+      "content": "GB",
+      "schemeId": "ISO3166-1-alpha2"
+    },
+    "shipTypeCode": {
+      "content": "60",
+      "listId": "UNECE-Rec28"
+    },
+    "shipTypeName": "Passenger ship"
+  },
+  "voyage": {
+    "voyageId": {
+      "content": "RD26-010"
+    },
+    "portOfDepartureCode": {
+      "content": "NLRTM",
+      "listId": "UNLOCODE"
+    },
+    "portOfDepartureName": "Rotterdam, Netherlands",
+    "portOfArrivalCode": {
+      "content": "GBSOU",
+      "listId": "UNLOCODE"
+    },
+    "portOfArrivalName": "Southampton, United Kingdom",
+    "estimatedArrivalDateTime": {
+      "content": "2026-09-30T18:00:00Z"
+    },
+    "estimatedDepartureDateTime": {
+      "content": "2026-10-01T08:00:00Z"
+    },
+    "nextPortCode": {
+      "content": "DEHAM",
+      "listId": "UNLOCODE"
+    },
+    "nextPortName": "Hamburg, Germany"
+  },
+  "imoDataReferences": {
+    "messageHeader.messageFunctionCode": "IMO0305",
+    "messageHeader.arrivalDepartureCode": "IMO0013",
+    "messageHeader.authenticationDateTime": "IMO0014",
+    "ship.imoShipNumberId": "IMO0140",
+    "ship.shipName": "IMO0142",
+    "ship.callSignId": "IMO0136",
+    "ship.mmsiNumberId": "IMO0326",
+    "ship.flagStateId": "IMO0138",
+    "voyage.portOfArrivalCode": "IMO0108",
+    "voyage.portOfArrivalName": "IMO0109",
+    "voyage.estimatedArrivalDateTime": "IMO0064",
+    "messageHeader.messageId": "IMO0277",
+    "mailDeliveryBill.originOfficeId": "IMO1232",
+    "mailDeliveryBill.originOfficeName": "IMO1233",
+    "mailDeliveryBill.destinationOfficeId": "IMO1234",
+    "mailDeliveryBill.destinationOfficeName": "IMO1235",
+    "mailDeliveryBill.numberOfLetterPostReceptacles": "IMO1180",
+    "mailDeliveryBill.numberOfParcelReceptacles": "IMO1181",
+    "mailDeliveryBill.numberOfEmptyBagSacks": "IMO1182",
+    "mailDeliveryBill.letterPostGrossWeightMeasure": "IMO1183",
+    "mailDeliveryBill.parcelGrossWeightMeasure": "IMO1184",
+    "mailDeliveryBill.emptyReceptacleGrossWeightMeasure": "IMO1185"
+  },
+  "mailDeliveryBill": {
+    "originOfficeId": {
+      "content": "KR0010"
+    },
+    "originOfficeName": "Origin Exchange Office 10",
+    "destinationOfficeId": {
+      "content": "DS0010"
+    },
+    "destinationOfficeName": "Destination Exchange Office 10",
+    "mailCategoryCode": {
+      "content": "A"
+    },
+    "transportEquipmentId": {
+      "content": "MAILU0000010"
+    },
+    "sealId": {
+      "content": "SEAL-00010"
+    },
+    "numberOfLetterPostReceptacles": 39,
+    "numberOfParcelReceptacles": 19,
+    "numberOfEmptyBagSacks": 13,
+    "letterPostGrossWeightMeasure": {
+      "content": 465.5,
+      "unitCode": "KGM"
+    },
+    "parcelGrossWeightMeasure": {
+      "content": 713.0,
+      "unitCode": "KGM"
+    },
+    "emptyReceptacleGrossWeightMeasure": {
+      "content": 44.2,
+      "unitCode": "KGM"
+    },
+    "observations": "Synthetic UPU mail consignment sample."
+  }
+}

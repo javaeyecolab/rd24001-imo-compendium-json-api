@@ -1,0 +1,120 @@
+{
+  "sampleMetadata": {
+    "syntheticSample": true,
+    "profileId": "RD24001-IMO-FAL-UNCEFACT-JSON-SAMPLE-1.0",
+    "imoCompendiumVersion": "FAL.5/Circ.56",
+    "datasetCode": "FAL1",
+    "datasetName": "General Declaration",
+    "datasetSlug": "fal1-general-declaration",
+    "note": "Synthetic demonstration payload; not an official IMO normative JSON message."
+  },
+  "messageHeader": {
+    "messageFunctionCode": {
+      "content": "9",
+      "listId": "1225",
+      "listAgencyId": "UN/EDIFACT"
+    },
+    "authenticationDateTime": {
+      "content": "2026-09-30T11:00:00Z"
+    },
+    "messageId": {
+      "content": "FAL1-9300099-09",
+      "schemeId": "RD24001-SAMPLE"
+    },
+    "arrivalDepartureCode": {
+      "content": "A",
+      "listId": "IMO-ArrivalDeparture"
+    }
+  },
+  "ship": {
+    "imoShipNumberId": {
+      "content": "9300099",
+      "schemeId": "IMOShipNumber",
+      "schemeAgencyId": "IMO"
+    },
+    "shipName": "RD GULF NAVIGATOR",
+    "callSignId": {
+      "content": "DR0009"
+    },
+    "mmsiNumberId": {
+      "content": "440000009",
+      "schemeId": "MMSI"
+    },
+    "flagStateId": {
+      "content": "LR",
+      "schemeId": "ISO3166-1-alpha2"
+    },
+    "shipTypeCode": {
+      "content": "80",
+      "listId": "UNECE-Rec28"
+    },
+    "shipTypeName": "Tanker"
+  },
+  "voyage": {
+    "voyageId": {
+      "content": "RD26-009"
+    },
+    "portOfDepartureCode": {
+      "content": "OMSLL",
+      "listId": "UNLOCODE"
+    },
+    "portOfDepartureName": "Salalah, Oman",
+    "portOfArrivalCode": {
+      "content": "AEJEA",
+      "listId": "UNLOCODE"
+    },
+    "portOfArrivalName": "Jebel Ali, United Arab Emirates",
+    "estimatedArrivalDateTime": {
+      "content": "2026-09-30T11:00:00Z"
+    },
+    "estimatedDepartureDateTime": {
+      "content": "2026-10-01T01:00:00Z"
+    },
+    "nextPortCode": {
+      "content": "SGSIN",
+      "listId": "UNLOCODE"
+    },
+    "nextPortName": "Singapore"
+  },
+  "imoDataReferences": {
+    "messageHeader.messageFunctionCode": "IMO0305",
+    "messageHeader.arrivalDepartureCode": "IMO0013",
+    "messageHeader.authenticationDateTime": "IMO0014",
+    "ship.imoShipNumberId": "IMO0140",
+    "ship.shipName": "IMO0142",
+    "ship.callSignId": "IMO0136",
+    "ship.mmsiNumberId": "IMO0326",
+    "ship.flagStateId": "IMO0138",
+    "voyage.portOfArrivalCode": "IMO0108",
+    "voyage.portOfArrivalName": "IMO0109",
+    "voyage.estimatedArrivalDateTime": "IMO0064"
+  },
+  "generalDeclaration": {
+    "master": {
+      "familyName": "Master9",
+      "givenName": "Alex",
+      "roleCode": {
+        "content": "MASTER"
+      }
+    },
+    "agentAtPort": {
+      "partyId": {
+        "content": "AGT-KR-009"
+      },
+      "name": "RD Port Agency 9",
+      "email": "agent9@example.invalid",
+      "telephone": "+82-51-555-1008"
+    },
+    "crewCount": 21,
+    "passengerCount": 0,
+    "briefCargoDescription": "Mixed cargo and stores",
+    "grossTonnageMeasure": {
+      "content": 52800,
+      "unitCode": "GT"
+    },
+    "netTonnageMeasure": {
+      "content": 28400,
+      "unitCode": "NT"
+    }
+  }
+}

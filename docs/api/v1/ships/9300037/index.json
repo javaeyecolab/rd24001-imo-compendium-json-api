@@ -1,0 +1,79 @@
+{
+  "imo": "9300037",
+  "shipName": "RD OCEAN LINK",
+  "syntheticSample": true,
+  "reports": [
+    {
+      "datasetCode": "FAL1",
+      "datasetName": "General Declaration",
+      "datasetSlug": "fal1-general-declaration",
+      "url": "./fal1-general-declaration.json"
+    },
+    {
+      "datasetCode": "FAL2",
+      "datasetName": "Cargo Declaration",
+      "datasetSlug": "fal2-cargo-declaration",
+      "url": "./fal2-cargo-declaration.json"
+    },
+    {
+      "datasetCode": "FAL3",
+      "datasetName": "Ship's Stores Declaration",
+      "datasetSlug": "fal3-ships-stores-declaration",
+      "url": "./fal3-ships-stores-declaration.json"
+    },
+    {
+      "datasetCode": "FAL4",
+      "datasetName": "Crew's Effects Declaration",
+      "datasetSlug": "fal4-crews-effects-declaration",
+      "url": "./fal4-crews-effects-declaration.json"
+    },
+    {
+      "datasetCode": "FAL5",
+      "datasetName": "Crew List",
+      "datasetSlug": "fal5-crew-list",
+      "url": "./fal5-crew-list.json"
+    },
+    {
+      "datasetCode": "FAL6",
+      "datasetName": "Passenger List",
+      "datasetSlug": "fal6-passenger-list",
+      "url": "./fal6-passenger-list.json"
+    },
+    {
+      "datasetCode": "FAL7",
+      "datasetName": "Dangerous Goods Manifest",
+      "datasetSlug": "fal7-dangerous-goods-manifest",
+      "url": "./fal7-dangerous-goods-manifest.json"
+    },
+    {
+      "datasetCode": "MAIL",
+      "datasetName": "Delivery Bill for Mail Consignment",
+      "datasetSlug": "delivery-bill-mail-consignment",
+      "url": "./delivery-bill-mail-consignment.json"
+    },
+    {
+      "datasetCode": "MDH",
+      "datasetName": "Maritime Declaration of Health",
+      "datasetSlug": "maritime-declaration-health",
+      "url": "./maritime-declaration-health.json"
+    },
+    {
+      "datasetCode": "SSC",
+      "datasetName": "Ship Sanitation Certificate",
+      "datasetSlug": "ship-sanitation-certificate",
+      "url": "./ship-sanitation-certificate.json"
+    },
+    {
+      "datasetCode": "SEC",
+      "datasetName": "Security Report",
+      "datasetSlug": "security-report",
+      "url": "./security-report.json"
+    },
+    {
+      "datasetCode": "WASTE",
+      "datasetName": "Advance Notification for Waste Delivery",
+      "datasetSlug": "advance-notification-waste-delivery",
+      "url": "./advance-notification-waste-delivery.json"
+    }
+  ]
+}

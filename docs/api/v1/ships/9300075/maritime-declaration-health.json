@@ -1,0 +1,108 @@
+{
+  "sampleMetadata": {
+    "syntheticSample": true,
+    "profileId": "RD24001-IMO-FAL-UNCEFACT-JSON-SAMPLE-1.0",
+    "imoCompendiumVersion": "FAL.5/Circ.56",
+    "datasetCode": "MDH",
+    "datasetName": "Maritime Declaration of Health",
+    "datasetSlug": "maritime-declaration-health",
+    "note": "Synthetic demonstration payload; not an official IMO normative JSON message."
+  },
+  "messageHeader": {
+    "messageFunctionCode": {
+      "content": "9",
+      "listId": "1225",
+      "listAgencyId": "UN/EDIFACT"
+    },
+    "authenticationDateTime": {
+      "content": "2026-09-29T21:00:00Z"
+    },
+    "messageId": {
+      "content": "MDH-9300075-07",
+      "schemeId": "RD24001-SAMPLE"
+    },
+    "arrivalDepartureCode": {
+      "content": "A",
+      "listId": "IMO-ArrivalDeparture"
+    }
+  },
+  "ship": {
+    "imoShipNumberId": {
+      "content": "9300075",
+      "schemeId": "IMOShipNumber",
+      "schemeAgencyId": "IMO"
+    },
+    "shipName": "RD AMERICA BRIDGE",
+    "callSignId": {
+      "content": "DR0007"
+    },
+    "mmsiNumberId": {
+      "content": "440000007",
+      "schemeId": "MMSI"
+    },
+    "flagStateId": {
+      "content": "MH",
+      "schemeId": "ISO3166-1-alpha2"
+    },
+    "shipTypeCode": {
+      "content": "70",
+      "listId": "UNECE-Rec28"
+    },
+    "shipTypeName": "Container ship"
+  },
+  "voyage": {
+    "voyageId": {
+      "content": "RD26-007"
+    },
+    "portOfDepartureCode": {
+      "content": "USOAK",
+      "listId": "UNLOCODE"
+    },
+    "portOfDepartureName": "Oakland, United States",
+    "portOfArrivalCode": {
+      "content": "USLAX",
+      "listId": "UNLOCODE"
+    },
+    "portOfArrivalName": "Los Angeles, United States",
+    "estimatedArrivalDateTime": {
+      "content": "2026-09-29T21:00:00Z"
+    },
+    "estimatedDepartureDateTime": {
+      "content": "2026-09-30T11:00:00Z"
+    },
+    "nextPortCode": {
+      "content": "JPTYO",
+      "listId": "UNLOCODE"
+    },
+    "nextPortName": "Tokyo, Japan"
+  },
+  "imoDataReferences": {
+    "messageHeader.messageFunctionCode": "IMO0305",
+    "messageHeader.arrivalDepartureCode": "IMO0013",
+    "messageHeader.authenticationDateTime": "IMO0014",
+    "ship.imoShipNumberId": "IMO0140",
+    "ship.shipName": "IMO0142",
+    "ship.callSignId": "IMO0136",
+    "ship.mmsiNumberId": "IMO0326",
+    "ship.flagStateId": "IMO0138",
+    "voyage.portOfArrivalCode": "IMO0108",
+    "voyage.portOfArrivalName": "IMO0109",
+    "voyage.estimatedArrivalDateTime": "IMO0064",
+    "maritimeDeclarationHealth.illnessCases[].illness": "IMO0220",
+    "maritimeDeclarationHealth.illnessCases[].symptomsOnsetDateTime": "IMO0221",
+    "maritimeDeclarationHealth.illnessCases[].reportedIndicator": "IMO0222",
+    "maritimeDeclarationHealth.illnessCases[].healthStatusCode": "IMO0223",
+    "maritimeDeclarationHealth.illnessCases[].caseDispositionCode": "IMO0224",
+    "maritimeDeclarationHealth.illnessCases[].treatment": "IMO0227",
+    "maritimeDeclarationHealth.visitedAffectedAreaIndicator": "IMO0203",
+    "maritimeDeclarationHealth.personDiedIndicator": "IMO0206"
+  },
+  "maritimeDeclarationHealth": {
+    "visitedAffectedAreaIndicator": false,
+    "personDiedIndicator": false,
+    "illPersonOnBoardIndicator": false,
+    "illnessCases": [],
+    "medicalOfficerContactedIndicator": false,
+    "sanitaryMeasuresApplied": "Routine sanitation procedures maintained."
+  }
+}

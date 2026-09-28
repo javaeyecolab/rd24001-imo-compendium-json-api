@@ -1,0 +1,106 @@
+{
+  "profile": "RD24001-IMO-FAL-UNCEFACT-JSON-SAMPLE-1.0",
+  "imoCompendiumVersion": "FAL.5/Circ.56",
+  "syntheticSamples": true,
+  "shipCount": 10,
+  "datasetCount": 12,
+  "sampleFileCount": 120,
+  "datasets": [
+    {
+      "datasetCode": "FAL1",
+      "datasetName": "General Declaration",
+      "datasetSlug": "fal1-general-declaration",
+      "reportingPhase": "arrival-departure",
+      "sampleCount": 10,
+      "indexUrl": "./datasets/fal1-general-declaration/index.json"
+    },
+    {
+      "datasetCode": "FAL2",
+      "datasetName": "Cargo Declaration",
+      "datasetSlug": "fal2-cargo-declaration",
+      "reportingPhase": "arrival-departure",
+      "sampleCount": 10,
+      "indexUrl": "./datasets/fal2-cargo-declaration/index.json"
+    },
+    {
+      "datasetCode": "FAL3",
+      "datasetName": "Ship's Stores Declaration",
+      "datasetSlug": "fal3-ships-stores-declaration",
+      "reportingPhase": "arrival-departure",
+      "sampleCount": 10,
+      "indexUrl": "./datasets/fal3-ships-stores-declaration/index.json"
+    },
+    {
+      "datasetCode": "FAL4",
+      "datasetName": "Crew's Effects Declaration",
+      "datasetSlug": "fal4-crews-effects-declaration",
+      "reportingPhase": "arrival",
+      "sampleCount": 10,
+      "indexUrl": "./datasets/fal4-crews-effects-declaration/index.json"
+    },
+    {
+      "datasetCode": "FAL5",
+      "datasetName": "Crew List",
+      "datasetSlug": "fal5-crew-list",
+      "reportingPhase": "arrival-departure",
+      "sampleCount": 10,
+      "indexUrl": "./datasets/fal5-crew-list/index.json"
+    },
+    {
+      "datasetCode": "FAL6",
+      "datasetName": "Passenger List",
+      "datasetSlug": "fal6-passenger-list",
+      "reportingPhase": "arrival-departure",
+      "sampleCount": 10,
+      "indexUrl": "./datasets/fal6-passenger-list/index.json"
+    },
+    {
+      "datasetCode": "FAL7",
+      "datasetName": "Dangerous Goods Manifest",
+      "datasetSlug": "fal7-dangerous-goods-manifest",
+      "reportingPhase": "arrival-departure",
+      "sampleCount": 10,
+      "indexUrl": "./datasets/fal7-dangerous-goods-manifest/index.json"
+    },
+    {
+      "datasetCode": "MAIL",
+      "datasetName": "Delivery Bill for Mail Consignment",
+      "datasetSlug": "delivery-bill-mail-consignment",
+      "reportingPhase": "conditional",
+      "sampleCount": 10,
+      "indexUrl": "./datasets/delivery-bill-mail-consignment/index.json"
+    },
+    {
+      "datasetCode": "MDH",
+      "datasetName": "Maritime Declaration of Health",
+      "datasetSlug": "maritime-declaration-health",
+      "reportingPhase": "arrival",
+      "sampleCount": 10,
+      "indexUrl": "./datasets/maritime-declaration-health/index.json"
+    },
+    {
+      "datasetCode": "SSC",
+      "datasetName": "Ship Sanitation Certificate",
+      "datasetSlug": "ship-sanitation-certificate",
+      "reportingPhase": "arrival",
+      "sampleCount": 10,
+      "indexUrl": "./datasets/ship-sanitation-certificate/index.json"
+    },
+    {
+      "datasetCode": "SEC",
+      "datasetName": "Security Report",
+      "datasetSlug": "security-report",
+      "reportingPhase": "pre-arrival",
+      "sampleCount": 10,
+      "indexUrl": "./datasets/security-report/index.json"
+    },
+    {
+      "datasetCode": "WASTE",
+      "datasetName": "Advance Notification for Waste Delivery",
+      "datasetSlug": "advance-notification-waste-delivery",
+      "reportingPhase": "pre-arrival",
+      "sampleCount": 10,
+      "indexUrl": "./datasets/advance-notification-waste-delivery/index.json"
+    }
+  ]
+}
